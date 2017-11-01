@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171101151426) do
+ActiveRecord::Schema.define(version: 20171101151806) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "passages", force: :cascade do |t|
+    t.string "departure_port"
+    t.string "arrival_port"
+    t.datetime "departure_date"
+    t.datetime "arrival_date"
+    t.text "description"
+    t.float "miles"
+    t.float "hours"
+    t.float "night_hours"
+    t.string "role"
+    t.boolean "overnight", null: false
+    t.boolean "tidal", null: false
+    t.boolean "ocean_passage", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
