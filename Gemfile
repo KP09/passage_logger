@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.4.1'
 
 gem 'devise'
+gem 'pundit'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'pg'

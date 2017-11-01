@@ -1,0 +1,5 @@
+<div>
+  <% policy_scope(current_user.passages).each do |passage| %>
+    <h2><%= passage.departure_port %></h2>
+  <% end %>
+</div>
