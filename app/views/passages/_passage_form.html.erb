@@ -1,0 +1,15 @@
+<%= simple_form_for @passage do |f| %>
+  <%= f.input 'departure_date' %>
+  <%= f.input 'departure_port' %>
+  <%= f.input 'arrival_date' %>
+  <%= f.input 'arrival_port' %>
+  <%= f.input 'miles' %>
+  <%= f.input 'hours' %>
+  <%= f.input 'night_hours' %>
+  <%= f.input 'role' %>
+  <%= f.input 'description' %>
+  <%= f.input 'overnight' %>
+  <%= f.input 'tidal' %>
+  <%= f.input 'ocean_passage' %>
+  <%= f.submit %>
+<% end %>

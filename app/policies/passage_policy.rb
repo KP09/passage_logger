@@ -3,6 +3,10 @@ class PassagePolicy < ApplicationPolicy
     true
   end
 
+  def new?
+    true
+  end
+
   class Scope < Scope
     def resolve
       scope.where(user_id: user.id)
