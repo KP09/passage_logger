@@ -10,6 +10,7 @@ gem 'puma'
 gem 'rails', '5.1.4'
 gem 'redis'
 gem 'webpacker'
+gem 'react_on_rails', '9.0.1'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
