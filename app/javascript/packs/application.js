@@ -7,4 +7,12 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
-console.log('Hello World from Webpacker')
+import ReactOnRails from 'react-on-rails';
+
+import { App } from '../bundles/src/containers/App';
+import { PassagesContainer } from '../bundles/src/containers/PassagesContainer';
+
+// This is how react_on_rails can see the component in the browser.
+ReactOnRails.register({
+  App, PassagesContainer
+});

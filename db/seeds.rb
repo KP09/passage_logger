@@ -4,8 +4,8 @@ Passage.destroy_all
 puts "Seeding new passages..."
 10.times do
   Passage.create!({
-    departure_port: "Some departure port",
-    arrival_port: "Some arrival port",
+    departure_port: "Lymington",
+    arrival_port: "Cherbourg",
     departure_date: Date.today-100,
     arrival_date: Date.today-90,
     description: "A really awesome passage. We left from here and arrived there. The weather was rough.",

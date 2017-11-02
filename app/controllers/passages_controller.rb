@@ -1,7 +1,8 @@
 class PassagesController < ApplicationController
   def index
-    @passages = policy_scope(Passage)
-    authorize(@passages)
+    passages = policy_scope(Passage)
+    authorize(passages)
+    @passages = { passages: passages }
   end
 
   def new
